@@ -1,0 +1,4 @@
+[0502/140835.424:ERROR:process_info.cc(329)] VirtualQueryEx: 存取被拒。 (0x5)
+[0502/140835.426:ERROR:process_info.cc(550)] ReadMemoryInfo failed
+[0502/140835.426:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[0502/140835.426:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 嘗試存取現有的處理程序。 (0xc000010a)

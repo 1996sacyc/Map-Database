@@ -24,16 +24,18 @@ public class datascrape {
 	public static void main(String[] args) throws InterruptedException {
 		
 		// TODO Auto-generated method stub
+		//直
+		String list0[]= {"三重","林口","中壢", "竹北","頭份","銅鑼", "台中系統", "林厝","虎尾", "嘉義","新營","新市", "岡山", "瑞隆路", "大華系統", "頭城"};
+		String HighWay0[] = {"國道 1 號","國道 1 號","國道 1 號","國道 1 號","國道 1 號","國道 1 號","國道 1 號","快速公路 76 號","國道 1 號", "國道 1 號","國道 1 號","國道 8 號","國道 1 號","國道 1 號", "國道 1 號","國道 5 號"  };
 		
-		String list0[]= {"三重", "桃園", "竹北", "台中系統", "林厝","雲林系統", "嘉義系統", "麻豆", "仁德服務區", "鼎金系統"};
-		String HighWay0[] = {"國道 1 號","國道 1 號","國道 1 號","國道 1 號","快速公路 76 號", "國道 1 號","國道 1 號","快速公路 84 號","國道 1 號","國道 1 號" };
-		String list1[]= {"圓山", "內壢", "竹北", "頭屋", "大甲", "大里二", "林厝", "雲林系統", "嘉義系統", "西庄", "關廟", "鼎金系統"};
-		String HighWay1[] = {"國道 1 號","國道 1 號","國道 1 號","國道 1 號", "國道 3 號", "快速公路 74 號" , "快速公路 76 號", "國道 1 號", "國道 1 號", "快速公路 84 號", "國道 3 號", "國道 1 號"};
-		
+		//橫
+		String list1[]= {"圓山", "林口", "內壢", "竹北", "香山", "頭屋","三義", "大甲","大雅", "大里二", "林厝","北斗", "雲林系統","嘉義","新營", "渡頭", "關廟","燕巢系統", "鼎金系統", "萬丹", "坪林行控", "羅東"};
+		String HighWay1[] = {"國道 1 號","國道 1 號","國道 1 號","國道 1 號","國道 3 號","國道 1 號","國道 1 號", "國道 3 號", "國道 1 號","快速公路 74 號" , "快速公路 76 號", "國道 1 號","國道 1 號","國道 1 號","國道 1 號", "快速公路 84 號", "國道 3 號", "國道 3 號", "國道 1 號", "快速公路 88 號", "國道 5 號","國道 5 號"};
+
 		while(true){
 			
-			for(int i =0; i<list1.length; i++) {
-				String file_name = "D:\\1968Img\\" + "Image1_" + i + ".png";
+			for(int i = 0; i<list1.length; i++) {
+				String file_name = "D:\\1968Imgs\\" + "Img0_" + i + ".png";
 				try{
 					
 					System.setProperty("webdriver.chrome.driver","C:\\Users\\voip\\eclipse-workspace\\Test\\tools\\chromedriver.exe");
@@ -75,7 +77,7 @@ public class datascrape {
 					Actions actionBuilder = new Actions(wd);
 					actionBuilder.click(svgObj).build().perform();
 					wd.manage().window().setSize(new Dimension(992, 850));
-					TimeUnit.MILLISECONDS.sleep(1500);
+					TimeUnit.MILLISECONDS.sleep(1800);
 		
 					TakesScreenshot ts=(TakesScreenshot)wd;
 					
@@ -107,7 +109,7 @@ public class datascrape {
 			}
 			
 			for(int i =0; i<list0.length; i++) {
-				String file_name = "D:\\1968Img\\" + "Image0_" + i + ".png";
+				String file_name = "D:\\1968Imgs\\" + "Img1_" + i + ".png";
 				try{
 					
 					System.setProperty("webdriver.chrome.driver","C:\\Users\\voip\\eclipse-workspace\\Test\\tools\\chromedriver.exe");
@@ -142,21 +144,21 @@ public class datascrape {
 					WebElement btn = wd.findElement(By.xpath("/html/body/div[2]/div/div[1]/div[3]/div[2]/div/div[1]/div[2]/button"));
 					btn.click();
 					
-					/*//for 1-km accuracy 
+					//for 1-km accuracy 
 					WebElement btn_1km = wd.findElement(By.cssSelector("[class='gis_info info_1km _event_click_gisinfo']"));
 					btn_1km.click();
 					wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"idModalGisInfo1kmAsk\"]/div/div")));
 					WebElement btn_check = wd.findElement(By.xpath("//*[@id=\"idModalGisInfo1kmAsk\"]/div/div/div/a[2]"));
 					btn_check.click();
 					TimeUnit.MILLISECONDS.sleep(3000);
-					//for 1-km accuracy*/
+					//for 1-km accuracy
 					
 					//resize the map partition
 					wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div/div[1]/div[4]/div/div[2]")));
 					WebElement svgObj = wd.findElement(By.xpath("/html/body/div[2]/div/div[1]/div[4]/div/div[2]"));
 					Actions actionBuilder = new Actions(wd);
 					actionBuilder.click(svgObj).build().perform();
-					TimeUnit.MILLISECONDS.sleep(1500);
+					TimeUnit.MILLISECONDS.sleep(1800);
 		
 					TakesScreenshot ts=(TakesScreenshot)wd;
 					
@@ -186,7 +188,7 @@ public class datascrape {
 				}
 			}
 			System.out.println("batch image done");
-			TimeUnit.MILLISECONDS.sleep(300000);
+			TimeUnit.MILLISECONDS.sleep(600000);
 		}
 	
 
