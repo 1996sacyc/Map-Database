@@ -2,3 +2,22 @@
 [0502/140835.426:ERROR:process_info.cc(550)] ReadMemoryInfo failed
 [0502/140835.426:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
 [0502/140835.426:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 嘗試存取現有的處理程序。 (0xc000010a)
+[0503/061237.912:WARNING:minidump_to_upload_parameters.cc(67)] duplicate annotation name metrics_client_id, discarding value c5e81fabcaf34fbc8a29953669a2e5fc
+[0503/061413.143:WARNING:minidump_to_upload_parameters.cc(67)] duplicate annotation name metrics_client_id, discarding value c5e81fabcaf34fbc8a29953669a2e5fc
+[0503/061424.740:WARNING:minidump_to_upload_parameters.cc(67)] duplicate annotation name metrics_client_id, discarding value c5e81fabcaf34fbc8a29953669a2e5fc
+[0503/061425.237:WARNING:minidump_to_upload_parameters.cc(67)] duplicate annotation name metrics_client_id, discarding value c5e81fabcaf34fbc8a29953669a2e5fc
+[0503/061426.558:WARNING:minidump_to_upload_parameters.cc(67)] duplicate annotation name metrics_client_id, discarding value c5e81fabcaf34fbc8a29953669a2e5fc
+[0503/062626.547:WARNING:minidump_to_upload_parameters.cc(67)] duplicate annotation name metrics_client_id, discarding value c5e81fabcaf34fbc8a29953669a2e5fc
+[0503/062631.036:WARNING:minidump_to_upload_parameters.cc(67)] duplicate annotation name metrics_client_id, discarding value c5e81fabcaf34fbc8a29953669a2e5fc
+[0503/062732.471:WARNING:minidump_to_upload_parameters.cc(67)] duplicate annotation name metrics_client_id, discarding value c5e81fabcaf34fbc8a29953669a2e5fc
+[0503/062833.874:WARNING:minidump_to_upload_parameters.cc(67)] duplicate annotation name metrics_client_id, discarding value c5e81fabcaf34fbc8a29953669a2e5fc
+[0504/010812.764:WARNING:minidump_to_upload_parameters.cc(67)] duplicate annotation name metrics_client_id, discarding value c5e81fabcaf34fbc8a29953669a2e5fc
+[0504/011007.595:WARNING:minidump_to_upload_parameters.cc(67)] duplicate annotation name metrics_client_id, discarding value c5e81fabcaf34fbc8a29953669a2e5fc
+[0504/012108.969:WARNING:minidump_to_upload_parameters.cc(67)] duplicate annotation name metrics_client_id, discarding value c5e81fabcaf34fbc8a29953669a2e5fc
+[0504/012209.671:WARNING:minidump_to_upload_parameters.cc(67)] duplicate annotation name metrics_client_id, discarding value c5e81fabcaf34fbc8a29953669a2e5fc
+[0504/012306.855:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: 管道已結束。 (0x6D)
+[0504/012307.355:ERROR:crashpad_client_win.cc(131)] crash server failed to launch, self-terminating
+[0504/012813.687:WARNING:minidump_to_upload_parameters.cc(67)] duplicate annotation name metrics_client_id, discarding value c5e81fabcaf34fbc8a29953669a2e5fc
+[0504/012915.776:WARNING:minidump_to_upload_parameters.cc(67)] duplicate annotation name metrics_client_id, discarding value c5e81fabcaf34fbc8a29953669a2e5fc
+[0504/013017.008:WARNING:minidump_to_upload_parameters.cc(67)] duplicate annotation name metrics_client_id, discarding value c5e81fabcaf34fbc8a29953669a2e5fc
+[0504/013118.006:WARNING:minidump_to_upload_parameters.cc(67)] duplicate annotation name metrics_client_id, discarding value c5e81fabcaf34fbc8a29953669a2e5fc
